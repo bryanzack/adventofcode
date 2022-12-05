@@ -15,13 +15,28 @@ int main()
     replace(line.begin(), line.end(), ',', ' ');
     replace(line.begin(), line.end(), '-', ' ');
     vector<int>nums;
-    for (auto i : line) 
+    for (auto i : line) {
+      cout << i << " ";
       if (i != 32) { nums.push_back(i-48); }
-    if ((nums[1]-nums[0])+1 == (nums[3]-nums[2])+1)
-      if (nums[1][0] == nums[0][0])
-        cout << "match" << endl;
+    }
+    cout << endl;
 
-    cout << (nums[1]-nums[0])+1 << " " << (nums[3]-nums[2])+1 << endl;
+    // if the length of both ranges is the same
+    if ((nums[1]-nums[0])+1 == (nums[3]-nums[2])+1) {
+      cout << "same length: ";
+      if (nums[0] == nums[2])
+        cout << "match" << endl;
+      else cout << "nomatch" << endl;
+    }
+    // if they are not equal
+    else {
+      if ((nums[1]-nums[0])+1 > (nums[3]-nums[2]+1)) {
+        if (nums[2] <= nums[2]
+      }
+    }
+
+
+    //cout << (nums[1]-nums[0])+1 << " " << (nums[3]-nums[2])+1 << endl;
 
     /*
     // if the lengths of the pairs are equal, check to see if starting values are the same
