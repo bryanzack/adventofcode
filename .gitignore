@@ -1,7 +1,13 @@
 *~
+
 *.ts.un~
 *.ts~
+
+
 *.swp
 *.swo
 *.un
+
+*.pdb
+*.exe
 node_modules/
